@@ -1,0 +1,79 @@
+$main-color: #b282ff;
+$darker-main-color: #8A42FF;
+$shadow-color: #d9c2ff;
+$accent-color: #E8FFC2;
+$main-font: "Libre Bakersville";
+$secondary-font: "Bebas Neue";
+
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    font-size: 2em;
+    font-family: "Bebas Neue";
+}
+
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 5vw;
+    width: 100%;
+    background: $main-color;
+    
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        font-size: 2rem;
+        li {
+          padding: 0 60px 0 60px;
+          list-style: none;
+        }
+      }
+     
+      a{
+        color: white;
+        text-decoration: none;
+        &:visited {
+          color: white;
+        }
+      }
+}
+
+
+
+
+
+
+
+.navbar-logo {
+  font-size: 3rem;
+  a{
+    color: white;
+    text-decoration: none;
+    &:visited {
+      color: white;
+    }
+  }
+}
+
+.menu {
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    font-size: 2rem;
+    li {
+      padding: 0 60px 0 60px;
+      list-style: none;
+    }
+  }
+}
