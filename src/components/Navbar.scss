@@ -4,12 +4,12 @@ $shadow-color: #d9c2ff;
 $accent-color: #E8FFC2;
 $main-font: "Libre Bakersville";
 $secondary-font: "Bebas Neue";
+$mobile-width: 500px;
 
 
 * {
     margin: 0 auto;
     padding: 0;
-    box-sizing: border-box;
   }
 
 body {
@@ -21,10 +21,10 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    height: 5vw;
-    width: 100%;
+    width: auto;
     background: $main-color;
+    padding: 16px;
+
     
     ul {
         display: flex;
@@ -32,6 +32,8 @@ body {
         justify-content: space-between;
         flex-direction: row;
         font-size: 2rem;
+        position: relative;
+        height: 100%;
         li {
           padding: 0 60px 0 60px;
           list-style: none;
@@ -47,11 +49,12 @@ body {
       }
 }
 
-
-
-
-
-
+.navbar-menu-toggle{
+  display: none;
+  position: absolute;
+  padding: 10px;
+  color: #fff;
+}
 
 .navbar-logo {
   font-size: 3rem;
@@ -64,16 +67,19 @@ body {
   }
 }
 
-.menu {
-  ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-    font-size: 2rem;
-    li {
-      padding: 0 60px 0 60px;
-      list-style: none;
-    }
+
+.sticky {
+  position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+
+@media screen and (max-width:500px) {
+    .navbar-container{
+      flex-direction: column;
+      ul {
+        flex-direction: column;
+      }
   }
+
 }
