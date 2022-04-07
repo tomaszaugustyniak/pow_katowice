@@ -10,11 +10,16 @@ $mobile-width: 500px;
 * {
     margin: 0 auto;
     padding: 0;
+    box-sizing: border-box;
   }
 
 body {
     font-size: 2em;
     font-family: "Bebas Neue";
+}
+
+.navbar {
+  position: relative;
 }
 
 .navbar-container {
@@ -44,7 +49,7 @@ body {
         color: white;
         text-decoration: none;
         &:visited {
-          color: white;
+          color: $accent-color;
         }
       }
 }
